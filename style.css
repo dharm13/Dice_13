@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dice {
+    display: flex;
+}
+
+.die {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.top-center {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.die:nth-child(1) .dot {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-left {
+    top: 5px;
+    left: 5px;
+}
+
+.top-right {
+    top: 5px;
+    right: 5px;
+}
+
+.middle-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-left {
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.middle-right {
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.bottom-left {
+    bottom: 5px;
+    left: 5px;
+}
+
+.bottom-right {
+    bottom: 5px;
+    right: 5px;
+}
